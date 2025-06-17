@@ -1,13 +1,15 @@
 
 import Header from './Header'
 import Footer from './Footer'
+import { Outlet } from 'react-router'
 
 function PageComponentAdjustMent() {
   return (
     <div>
         <Header/>
-      <slot/>
-        <Footer/>
+    <Outlet/>
+    
+           <Footer/>
 
     </div>
   )
